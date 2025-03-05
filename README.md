@@ -1,6 +1,11 @@
 # Duplex
  Duplex and Speed
  
+ SW1: Interface FastEthernet0/1 is set to half-duplex (default speed of 100 Mbps)   
+     Interface FastEthernet0/2 is set to 10 Mbps and half-duplex.
+SW2: Interface FastEthernet0/1 is set to 10 Mbps   
+     Interface FastEthernet0/2 is set to auto speed and auto duplex, so it will automatically negotiate the best settings.
+ 
  ![Duplex](Duplex.png)
 
 ### Switch 1
@@ -15,10 +20,12 @@ no shutdown
 exit
 interface FastEthernet0/ 1
 duplex half
+no shutdown
 exit
 interface FastEthernet0/ 2
 duplex half
 speed 10
+no shutdown
 ```
 
 
@@ -34,12 +41,15 @@ no shutdown
 exit
 interface FastEthernet0/ 1
 speed 10
+no shutdown
 exit
 interface FastEthernet0/ 2
 speed auto
+no shutdown
 exit
 interface FastEthernet0/ 2
 duplex auto
+no shutdown
 exit
 exit
 ```
