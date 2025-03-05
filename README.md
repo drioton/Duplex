@@ -6,6 +6,16 @@
 SW2: Interface FastEthernet0/1 is set to 10 Mbps   
      Interface FastEthernet0/2 is set to auto speed and auto duplex, so it will automatically negotiate the best settings.
  
+ 
+ ### SW
+ Vlan1 interface is configured with IP 192.168.1.2 and subnet mask 255.255.255.0   
+FastEthernet0/1 is manually set to half-duplex mode.   
+FastEthernet0/2 is manually set to half-duplex and speed 10 Mbps.   
+### SW
+Vlan1 interface is configured with IP 192.168.1.3 and subnet mask 255.255.255.0.   
+FastEthernet0/1 is manually set to speed 10 Mbps.   
+FastEthernet0/2 is set to auto speed and auto duplex.   
+
  ![Duplex](Duplex.png)
 
 ### Switch 1
