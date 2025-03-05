@@ -1,0 +1,2 @@
+# Duplex
+ Duplex and Speed
